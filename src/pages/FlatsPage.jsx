@@ -18,16 +18,23 @@ export const Flats = () => {
 
   // Filter by Country (Free Text)
   if (filter.country) {
-    // TODO...
+    flatsFiltered = flats.filter((flat) =>
+      flat.country.toLowerCase().includes(filter.country.toLowerCase())
+    )
   }
   // Filter by City (Free Text)
   if (filter.city) {
-    // TODO...
+    flatsFiltered = flats.filter((flat) =>
+      flat.city.toLowerCase().includes(filter.city.toLowerCase())
+    )
   }
 
   // OR FILTER - Category (e.g. Apartment OR House)
   if (filter.categories.length) {
-    // TODO...
+    flatsFiltered = flatsFiltered.filter((flat) =>
+      // check if flat category is INCLUDED in filter categories
+      filter.categories.includes(flat.category)
+    )
   }
 
   // AND Filter - Equipment (e.g. WLAN AND Seaview)

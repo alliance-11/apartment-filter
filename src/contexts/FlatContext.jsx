@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext } from "react" 
 import flatsData from "../data/flats.json"
 import { useState } from "react"
 
@@ -9,8 +9,8 @@ export const FlatContext = createContext()
 const filterDefault = {
   country: "",
   city: "",
-  categories: [],
-  equipment: [],
+  categories: [], // Apartment or House
+  equipment: [], // example: [WLAN, DoubleBeds]
   priceMin: false,
   priceMax: false,
 }

@@ -5,21 +5,27 @@ export const FlatFilterForm = () => {
   const { filter, setFilter } = useContext(FlatContext)
 
   // update text search filters
-  const onTextChange = (e) =>
+  const onTextChange = (e) => {
     setFilter({ ...filter, [e.target.name]: e.target.value })
+  }
 
   // update checkbox filters
   // (using a javascript SET => sets have the advantage to store arrays with unique (!) values only)
   const onCheckboxChange = (e) => {
     const filterKey = e.target.name // e.g. "equipment"
     const itemSelected = e.target.value // e.g. "doubleBeds"
-    
+
+    console.log( e.target.name, e.target.value )
     let selectionNew = [...filter[filterKey]] // copy OLD selection array
 
     // toggle item in array (add / remove)
+    console.log( selectionNew )
+
     e.target.checked
       ? selectionNew.push(itemSelected)
       : (selectionNew = selectionNew.filter((item) => item !== itemSelected))
+
+    console.log(selectionNew)
 
     // update filter state
     setFilter({ ...filter, [filterKey]: selectionNew })
