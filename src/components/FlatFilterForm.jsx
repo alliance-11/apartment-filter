@@ -4,6 +4,8 @@ import { FlatContext } from "../contexts/FlatContext"
 export const FlatFilterForm = () => {
   const { filter, setFilter } = useContext(FlatContext)
 
+
+
   // update text search filters
   const onTextChange = (e) => {
     setFilter({ ...filter, [e.target.name]: e.target.value })

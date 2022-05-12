@@ -39,12 +39,33 @@ export const Flats = () => {
 
   // AND Filter - Equipment (e.g. WLAN AND Seaview)
   if (filter.equipment.length) {
-    // TODO...
+    filter.equipment.forEach((criteria) => {
+      flatsFiltered = flatsFiltered.filter((flat) => flat[criteria])
+    })
   }
 
   // RANGE filter - Price between min & max
   if (filter.priceMin || filter.priceMax) {
-    // TODO...
+    console.log(filter.priceMin, filter.priceMax)
+    // (flats) => (item) => pricePerNight
+    flatsFiltered = flatsFiltered.filter((flat) => {
+      
+      // Min and Max set by user => look which flat price is BETWEEN the two
+      if (filter.priceMin && filter.priceMax) {
+        return (
+          flat.pricePerNight >= filter.priceMin &&
+          flat.pricePerNight <= filter.priceMax
+        )
+      }
+      // just MIN price set by user => check which flats have this or a HIGHER price
+      else if(filter.priceMin) {
+        return flat.pricePerNight >= filter.priceMin
+      }
+      // just MAX price set by user => check which flats have this or a LOWER price
+      else if(filter.priceMax) {
+        return flat.pricePerNight <= filter.priceMax
+      }
+    })
   }
 
   return (
