@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { FlatContext } from "../contexts/FlatContext"
 
-export const FlatFilter = () => {
+export const FlatFilterForm = () => {
   const { filter, setFilter } = useContext(FlatContext)
 
   // update text search filters

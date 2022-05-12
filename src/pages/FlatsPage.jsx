@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { FlatContext } from "../contexts/FlatContext"
-import { FlatFilter } from "../components/FlatFilter"
+import { FlatFilterForm } from "../components/FlatFilterForm"
 import { FlatList } from "../components/FlatList"
 
 /**
@@ -42,7 +42,7 @@ export const Flats = () => {
 
   return (
     <div className="flats">
-      <FlatFilter />
+      <FlatFilterForm />
       <FlatList flats={flatsFiltered} />
     </div>
   )
