@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "f1",
+    "category": "Apartment",
+    "title": "Apartmento Mala",
+    "city": "Malaga",
+    "country": "Spain",
+    "beds": 1,
+    "doubleBeds": 1,
+    "seaview": false,
+    "wlan": true,
+    "pricePerNight": 45
+  },
+  {
+    "_id": "f2",
+    "category": "Apartment",
+    "title": "Apartmento Nerja",
+    "city": "Nerja",
+    "country": "Spain",
+    "beds": 0,
+    "doubleBeds": 1,
+    "seaview": true,
+    "wlan": true,
+    "pricePerNight": 40
+  },
+  {
+    "_id": "f3",
+    "category": "Holiday House",
+    "title": "Ferienhaus Queen",
+    "country": "England",
+    "city": "London",
+    "beds": 2,
+    "doubleBeds": 1,
+    "seaview": false,
+    "wlan": true,
+    "pricePerNight": 50
+  },
+  {
+    "_id": "f4",
+    "category": "Apartment",
+    "title": "Apartment Konservativ",
+    "country": "Germany",
+    "city": "Berlin",
+    "beds": 1,
+    "doubleBeds": 1,
+    "seaview": false,
+    "wlan": true,
+    "pricePerNight": 40
+  },
+  {
+    "_id": "f5",
+    "category": "Apartment",
+    "title": "Apartment Seeigel",
+    "country": "Germany",
+    "city": "Hamburg",
+    "beds": 1,
+    "doubleBeds": 0,
+    "seaview": false,
+    "wlan": false,
+    "pricePerNight": 30
+  },
+  {
+    "_id": "f6",
+    "category": "Holiday House",
+    "title": "Haus Hafenfuchs",
+    "country": "Germany",
+    "city": "Hamburg",
+    "beds": 2,
+    "doubleBeds": 0,
+    "seaview": true,
+    "wlan": true,
+    "pricePerNight": 55
+  },
+  {
+    "_id": "f7",
+    "category": "Apartment",
+    "title": "Apartment Red Bull",
+    "country": "Germany",
+    "city": "Leipzig",
+    "beds": 2,
+    "doubleBeds": 0,
+    "seaview": false,
+    "wlan": true,
+    "pricePerNight": 35
+  },
+  {
+    "_id": "f8",
+    "category": "Apartment",
+    "title": "Apartmento Malo",
+    "country": "Spain",
+    "city": "Malaga",
+    "beds": 1,
+    "doubleBeds": 0,
+    "seaview": true,
+    "wlan": false,
+    "pricePerNight": 40
+  },
+  {
+    "_id": "f9",
+    "category": "Apartment",
+    "title": "Apartment Roter Drachen",
+    "country": "Thailand",
+    "city": "Bangkok",
+    "beds": 2,
+    "doubleBeds": 1,
+    "seaview": true,
+    "wlan": true,
+    "pricePerNight": 10
+  },
+  {
+    "_id": "f10",
+    "category": "Holiday House",
+    "title": "Goldenes Haus",
+    "country": "Thailand",
+    "city": "Chiang Mai",
+    "beds": 2,
+    "doubleBeds": 2,
+    "seaview": false,
+    "wlan": true,
+    "pricePerNight": 20
+  }
+]
